@@ -1,0 +1,72 @@
+.burgerMenu_block {
+  position: relative;
+  height: 40rem;
+  background: url(../../img/burgerMenu/burgerMenu_background.jpg) center center/cover no-repeat;
+  color: white;
+}
+
+.section_productMenu-title {
+  font-size: 48px;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.products_menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.product_menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product_menu-title {
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+}
+.product_menu-title.silver {
+  background-color: #999999;
+}
+.product_menu-title.black {
+  background-color: black;
+}
+.product_menu-title.red {
+  background-color: #ca1b36;
+}
+
+.product_menu-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  text-transform: uppercase;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  margin: 0rem auto;
+}
+
+.product_menu-content {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  background: rgba(47, 50, 52, 0.9);
+  -webkit-transition: width 1.5s;
+  transition: width 1.5s;
+}
+
+.product_menu-container p {
+  margin: 1rem;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+}

@@ -1,0 +1,24 @@
+.howWeWorksVideo_block {
+  margin-bottom: 4rem;
+}
+
+.videoWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.howWeWorks_title {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.howWeWorks_video {
+  margin: 0 auto;
+}
