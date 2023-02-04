@@ -1,32 +1,32 @@
-@import url(../css/blocks_styles/normalize.css);
-@import url(../css/blocks_styles/staticControls.css);
-@import url(../css/blocks_styles/header.css);
-@import url(../css/blocks_styles/heroContent.css);
-@import url(../css/blocks_styles/slider.css);
-@import url(../css/blocks_styles/team.css);
-@import url(../css/blocks_styles/burgerMenu.css);
-@import url(../css/blocks_styles/reviews.css);
-@import url(../css/blocks_styles/howWeWorks.css);
-@import url(../css/blocks_styles/orderForm.css);
-@import url(../css/blocks_styles/map.css);
-@import url(../css/blocks_styles/footer.css);
+@import url(./css/blocks_styles/normalize.css);
+@import url(./css/blocks_styles/staticControls.css);
+@import url(./css/blocks_styles/header.css);
+@import url(./css/blocks_styles/heroContent.css);
+@import url(./css/blocks_styles/slider.css);
+@import url(./css/blocks_styles/team.css);
+@import url(./css/blocks_styles/burgerMenu.css);
+@import url(./css/blocks_styles/reviews.css);
+@import url(./css/blocks_styles/howWeWorks.css);
+@import url(./css/blocks_styles/orderForm.css);
+@import url(./css/blocks_styles/map.css);
+@import url(./css/blocks_styles/footer.css);
 
 @font-face { 
     font-family: "PlayRegular";
-    src: url("../fonts/PlayRegular/PlayRegular.eot");
-    src: url("../fonts/PlayRegular/PlayRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/PlayRegular/PlayRegular.woff") format("woff"),
-    url("../fonts/PlayRegular/PlayRegular.ttf") format("truetype");
+    src: url("./fonts/PlayRegular/PlayRegular.eot");
+    src: url("./fonts/PlayRegular/PlayRegular.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/PlayRegular/PlayRegular.woff") format("woff"),
+    url("./fonts/PlayRegular/PlayRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: 400;
 }
 
 @font-face { 
     font-family: "PlayBold";
-    src: url("../fonts/PlayBold/PlayBold.eot");
-    src: url("../fonts/PlayBold/PlayBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/PlayBold/PlayBold.woff") format("woff"),
-    url("../fonts/PlayBold/PlayBold.ttf") format("truetype");
+    src: url("./fonts/PlayBold/PlayBold.eot");
+    src: url("./fonts/PlayBold/PlayBold.eot?#iefix")format("embedded-opentype"),
+    url("./fonts/PlayBold/PlayBold.woff") format("woff"),
+    url("./fonts/PlayBold/PlayBold.ttf") format("truetype");
     font-style: normal;
     font-weight: 600;
 }

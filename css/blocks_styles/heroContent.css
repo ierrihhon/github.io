@@ -57,21 +57,25 @@
 @media (max-width: 1250px) {
   .heroContent__image img {
     width: 350px;
+    height: 350px;
   }
 }
 @media (max-width: 1024px) {
   .heroContent__image img {
     width: 300px;
+    height: 300px;
   }
 }
 @media (max-width: 540px) {
   .heroContent__image img {
     width: 260px;
+    height: 260px;
   }
 }
 @media (max-width: 400px) {
   .heroContent__image img {
     width: 280px;
+    height: 280px;
   }
 }
 
