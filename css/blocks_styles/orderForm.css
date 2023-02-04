@@ -1,7 +1,6 @@
 .orderForm_block {
   background: url(../../img/orderForm/black_background.jpg) center no-repeat;
   background-size: cover;
-  padding-bottom: 5rem;
 }
 
 .orderForm_title {
@@ -13,11 +12,41 @@
   padding-top: 4rem;
   margin-bottom: 3rem;
 }
+@media (max-width: 768px) {
+  .orderForm_title {
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-top: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .orderForm_title {
+    font-size: 34px;
+  }
+}
+@media (max-width: 480px) {
+  .orderForm_title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 400px) {
+  .orderForm_title {
+    font-size: 24px;
+  }
+}
 
 .orderForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 768px) {
+  .orderForm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .orderForm:last-child {
@@ -27,6 +56,20 @@
 .orderForm_col {
   width: 50%;
   padding: 1rem;
+}
+@media (max-width: 768px) {
+  .orderForm_col {
+    width: 70%;
+    padding: 8px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .orderForm_col {
+    width: 100%;
+    padding: 8px 0 0 0;
+    margin: 0 auto;
+  }
 }
 
 .orderForm_row {
@@ -64,6 +107,12 @@
           box-sizing: border-box;
   padding: 8px 5px;
 }
+@media (max-width: 1024px) {
+  .orderForm_input {
+    font-size: 15px;
+    padding: 5px 3px;
+  }
+}
 
 .orderForm_input:focus {
   border-color: #dee2bd;
@@ -82,9 +131,15 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 .orderForm_controls:last-child {
-  margin-top: 10px;
+  margin-top: 12px;
+}
+@media (max-width: 600px) {
+  .orderForm_controls {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .radio {
@@ -96,6 +151,24 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media (max-width: 1024px) {
+  .radio {
+    font-size: 15px;
+  }
+  .radio:first-child {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 1024px) and (max-width: 400px) {
+  .radio:first-child {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 1024px) and (max-width: 400px) {
+  .radio {
+    font-size: 13px;
+  }
 }
 
 .radio-elem {
@@ -144,6 +217,11 @@
   color: white;
   margin: auto 6px;
 }
+@media (max-width: 400px) {
+  .radio_title {
+    margin: auto 2px;
+  }
+}
 
 .orderForm_buttons {
   display: -webkit-box;
@@ -152,6 +230,14 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .orderForm_buttons {
+    margin-top: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .order_button.btn--theme--red {
@@ -162,6 +248,13 @@
   color: white;
   border: none;
   margin-right: 1rem;
+}
+@media (max-width: 400px) {
+  .order_button.btn--theme--red {
+    width: 120px;
+    font-size: 12px;
+    padding: 1rem;
+  }
 }
 
 .order_button.btn--theme--red:hover {
@@ -176,6 +269,13 @@
   background-color: transparent;
   color: #ffffff;
   border: none;
+}
+@media (max-width: 400px) {
+  .order_button.btn--theme--transparent {
+    width: 120px;
+    font-size: 12px;
+    padding: 1rem;
+  }
 }
 
 .order_button.btn--theme--transparent:hover {

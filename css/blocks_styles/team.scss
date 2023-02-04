@@ -2,13 +2,17 @@
     font-size: 48px;
     text-align: center;
     text-transform: uppercase;
-    margin: 4rem 0 3rem 0;
+    margin: 0 0 3rem 0;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+        margin: 0 0 10px 0;
+    }
 }
 
 .teamList_row-desctop {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
 }
 
 .teamList_row-mobile {
@@ -33,6 +37,14 @@
     border: 2px solid transparent;
     padding: 5px;
     transition: .7s;
+
+    @media (max-width: 768px) {
+        width: 50%;
+    }
+
+    @media (max-width: 540px) {
+       padding: 5px 15px;
+    }
 }
 
 .teamList_row-mobile .teamList_item {
@@ -41,16 +53,22 @@
     & .teamate_photo, .teamate_desc {
         display: none;
     }
+
+    @media (max-width: 768px) {
+        margin: 0 auto;
+    }
 }
 
 .teamList_row-mobile .teamList_item.active {
     & .teamate_photo, .teamate_desc {
-        display: block;
+        display: flex;
+        flex-direction: column;
     }
 }
 
 .teamList_item:hover {
     border-color: #e01f3d;
+    border-radius: 10px;
 
     & .teamate_desc div {
         opacity: 1;
@@ -66,10 +84,24 @@
     margin: 0 auto;
 }
 
+.teamate_photo img {
+    width: 100%;
+}
+
+.teamList_row-mobile .teamate_photo img {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .teamate_name {
     display: flex;
+    text-align: center;
     font-size: 21px;
     margin: 10px auto;
+
+    @media(max-width: 1100px) {
+        font-size: 18px;
+    }
 }
 
 .teamate_name img {
@@ -85,6 +117,11 @@
 .teamate_desc p {
     text-align: center;
     margin-bottom: 6px;
+}
+
+.teamList_row-mobile .teamate_desc p {
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .teamate_desc div {

@@ -1,7 +1,6 @@
 .orderForm_block {
     background: url(../../img/orderForm/black_background.jpg) center no-repeat;
     background-size: cover;
-    padding-bottom: 5rem;
 }
 
 .orderForm_title {
@@ -12,10 +11,32 @@
     font-weight: 700;
     padding-top: 4rem;
     margin-bottom: 3rem;
+
+    @media(max-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 10px;
+        padding-top: 1rem;
+    }
+
+    @media(max-width: 600px) {
+        font-size: 34px;
+    }
+
+    @media(max-width: 480px) {
+        font-size: 28px;
+    }
+
+    @media(max-width: 400px) {
+        font-size: 24px;
+    }
 }
 
 .orderForm {
     display: flex;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .orderForm {
@@ -27,6 +48,18 @@
 .orderForm_col {
     width: 50%;
     padding: 1rem;
+
+    @media(max-width: 768px) {
+        width: 70%;
+        padding: 8px;
+        margin: 0 auto;
+    }
+
+    @media(max-width: 600px) {
+        width: 100%;
+        padding: 8px 0 0 0;
+        margin: 0 auto;
+    }
 }
 
 .orderForm_row {
@@ -62,6 +95,11 @@
     border: 3px solid transparent;
     box-sizing: border-box;
     padding: 8px 5px;
+
+    @media(max-width: 1024px) {
+        font-size: 15px;
+        padding: 5px 3px;
+    }
 }
 
 .orderForm_input {
@@ -79,11 +117,13 @@
 .orderForm_controls {
     display: flex;
     flex-wrap: wrap;
-}
 
-.orderForm_controls {
     &:last-child {
-        margin-top: 10px;
+        margin-top: 12px;
+    }
+
+    @media(max-width: 600px) {
+        justify-content: center;
     }
 }
 
@@ -91,6 +131,23 @@
     display: flex;
     cursor: pointer;
     user-select: none;
+
+    @media(max-width: 1024px) {
+
+        font-size: 15px;
+
+        &:first-child {
+            margin-right: 10px;
+
+            @media(max-width: 400px) {
+                margin-right: 8px;
+            }
+        }
+
+        @media(max-width: 400px) {
+            font-size: 13px;
+        }
+    }
 }
 
 .radio-elem {
@@ -149,11 +206,20 @@
 .radio_title {
     color: white;
     margin: auto 6px;
+
+    @media(max-width: 400px) {
+        margin: auto 2px;
+    }
 }
 
 .orderForm_buttons {
     display: flex;
     justify-content: flex-end;
+
+    @media(max-width: 768px) {
+        margin-top: 12px;
+        justify-content: center;
+    }
 }
 
 .order_button.btn--theme--red {
@@ -164,6 +230,12 @@
     color: white;
     border: none;
     margin-right: 1rem;
+
+    @media(max-width: 400px) {
+        width: 120px;
+        font-size: 12px;
+        padding: 1rem;
+    }
 }
 
 .order_button.btn--theme--red {
@@ -180,6 +252,12 @@
     background-color: transparent;
     color: #ffffff;
     border: none;
+
+    @media(max-width: 400px) {
+        width: 120px;
+        font-size: 12px;
+        padding: 1rem;
+    }
 }
 
 .order_button.btn--theme--transparent {

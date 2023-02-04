@@ -3,13 +3,32 @@
 }
 
 .productSlider {
-  padding: 5rem 1rem;
+  padding: 2rem 1rem;
+}
+@media (max-width: 480px) {
+  .productSlider {
+    padding: 1rem;
+  }
+}
+
+.productSlider.own {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .productSlider_list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.productSlider_list.own {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1000px;
+  overflow: hidden;
 }
 
 .productSlider_item {
@@ -24,6 +43,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .productSlider_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .slider_item-image {
   width: 50%;
@@ -34,10 +61,69 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media (max-width: 1250px) {
+  .slider_item-image {
+    width: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .slider_item-image {
+    width: 25%;
+  }
+}
+@media (max-width: 768px) {
+  .slider_item-image {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .slider_item-image img {
+    width: 240px;
+    height: 240px;
+    margin: auto;
+  }
+}
+@media (max-width: 1024px) {
+  .slider_item-image img {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .slider_item-image img {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 480px) {
+  .slider_item-image img {
+    width: 180px;
+    height: 180px;
+  }
+}
 
 .slider_item-desc {
   width: 50%;
   position: relative;
+}
+@media (max-width: 1250px) {
+  .slider_item-desc {
+    width: 70%;
+  }
+}
+@media (max-width: 1024px) {
+  .slider_item-desc {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .slider_item-desc {
+    width: 100%;
+  }
 }
 
 .settings_button {
@@ -50,6 +136,11 @@
   -webkit-transition: 0.7s;
   transition: 0.7s;
   margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .settings_button {
+    display: none;
+  }
 }
 
 .settings_button:hover {
@@ -137,6 +228,26 @@
   color: #292929;
   margin-bottom: 20px;
 }
+@media (max-width: 1250px) {
+  .itemSlider_title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  .itemSlider_title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .itemSlider_title {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .itemSlider_title {
+    font-size: 24px;
+  }
+}
 
 .itemSlider_text {
   width: 20rem;
@@ -145,12 +256,26 @@
   color: #666666;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  .itemSlider_text {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto 8px;
+  }
+}
 
 .itemSlider_feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .itemSlider_feature {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .itemSlider_feature span:first-child {
@@ -174,6 +299,13 @@
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 768px) {
+  .itemSlider_priceButtonRow {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .itemSlider_priceButtonRow p {
   font-size: 36px;
@@ -182,9 +314,40 @@
   color: #151515;
   margin: 0;
 }
+@media (max-width: 480px) {
+  .itemSlider_priceButtonRow p {
+    font-size: 30px;
+    line-height: 48px;
+  }
+}
+@media (max-width: 360px) {
+  .itemSlider_priceButtonRow p {
+    font-size: 24px;
+    line-height: 48px;
+  }
+}
 
 .order_button.slider {
   border-radius: 36px;
   margin-left: 1.5rem;
   padding: 1.5rem 2.8rem;
+}
+@media (max-width: 480px) {
+  .order_button.slider {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 360px) {
+  .order_button.slider {
+    padding: 0.5rem 1rem;
+  }
+  .order_button.slider a {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 678px) {
+  .owl-item.active {
+    padding: 0 2rem 0 1rem;
+  }
 }

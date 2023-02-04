@@ -1,8 +1,16 @@
+.burgerMenu_block .container {
+  margin: 0;
+}
+
 .burgerMenu_block {
   position: relative;
-  height: 40rem;
   background: url(../../img/burgerMenu/burgerMenu_background.jpg) center center/cover no-repeat;
   color: white;
+}
+@media (max-width: 540px) {
+  .burgerMenu_block {
+    position: relative;
+  }
 }
 
 .section_productMenu-title {
@@ -10,39 +18,79 @@
   text-transform: uppercase;
   padding-top: 2rem;
 }
+@media (max-width: 540px) {
+  .section_productMenu-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 480px) {
+  .section_productMenu-title {
+    font-size: 30px;
+  }
+}
 
-.products_menu {
+.desctop-accordeon {
+  display: block;
+}
+@media (max-width: 540px) {
+  .desctop-accordeon {
+    display: none;
+  }
+}
+
+.mobile-accordeon {
+  display: none;
+}
+@media (max-width: 540px) {
+  .mobile-accordeon {
+    display: block;
+  }
+}
+
+.products_menu, .color_menu {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   top: 0;
   right: 0;
+  left: 0;
   bottom: 0;
 }
 
-.product_menu-item {
+.product_menu-item, .color_menu-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.product_menu-title {
+.color_menu-item.active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: inherit;
+}
+
+.color_menu-item.hidden {
+  z-index: -1;
+}
+
+.product_menu-title, .color_menu-title {
   position: relative;
   width: 100px;
   cursor: pointer;
 }
-.product_menu-title.silver {
+.product_menu-title.silver, .color_menu-title.silver {
   background-color: #999999;
 }
-.product_menu-title.black {
+.product_menu-title.black, .color_menu-title.black {
   background-color: black;
 }
-.product_menu-title.red {
+.product_menu-title.red, .color_menu-title.red {
   background-color: #ca1b36;
 }
 
-.product_menu-text {
+.product_menu-text, .color_menu-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,7 +104,7 @@
   margin: 0rem auto;
 }
 
-.product_menu-content {
+.product_menu-content, .color_menu-content {
   position: relative;
   width: 0;
   overflow: hidden;
@@ -65,8 +113,24 @@
   transition: width 1.5s;
 }
 
-.product_menu-container p {
+.color_menu-item .color_menu-content {
+  -webkit-transition: width 0.01s;
+  transition: width 0.01s;
+}
+
+.color_menu-item.active .color_menu-content {
+  width: 100%;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+}
+
+.product_menu-container p, .color_menu-container p {
   margin: 1rem;
   font-size: 18px;
   letter-spacing: 0.6px;
+}
+@media (max-width: 540px) {
+  .product_menu-container p, .color_menu-container p {
+    font-size: 16px;
+  }
 }

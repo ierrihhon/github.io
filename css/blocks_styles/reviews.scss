@@ -1,20 +1,25 @@
-.reviews_block {
-    margin: 4rem 0;
-}
-
 .SectionReviews_title {
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 2rem;
+
+    @media(max-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 1rem;
+    }
 }
 
 .reviews_display {
     position: relative;
     background-color: #f8faf9;
-    padding: 3.15rem 2.8rem 2.1rem;
+    padding: 2rem 1rem;
     overflow: hidden;
+
+    @media(max-width: 768px) {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .reviews_display {
@@ -31,10 +36,15 @@
         background: white;
     }
 }
+
 .reviews_switcher {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+
+    @media(max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .reviews_list {
@@ -44,6 +54,10 @@
 
 .reviews_display-inner {
     display: flex;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 }
 
 .reviews_item {
@@ -67,6 +81,18 @@
 .reviews_avatar {
     width: 260px;
     height: 260px;
+
+    @media(max-width: 768px) {
+        width: 168px;
+        height: 168px;
+        margin: 0 auto 3rem;
+    }
+
+    @media(max-width: 768px) {
+        width: 128px;
+        height: 128px;
+        margin: 0 auto 1.5rem;
+    }
 }
 
 .reviews_avatar-image {
@@ -78,12 +104,25 @@
 .reviews_content {
     flex: 1;
     margin-left: 20px;
+
+    @media(max-width: 768px) {
+        margin-left: 0;
+    }
 }
 
 .reviews_title {
     font-size: 30px;
     font-weight: bold;
     margin-bottom: 22px;
+
+    @media(max-width: 768px) {
+        text-align: center;
+    }
+
+    @media(max-width: 480px) {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
 }
 
 .reviews_text {
@@ -91,12 +130,31 @@
     font-size: 16px;
     margin-bottom: 2.25rem;
     color: #666666;
+
+    @media(max-width: 1200px) {
+        width: 90%;
+    }
+
+    @media(max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    @media(max-width: 480px) {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
 }
 
 .reviews_author {
     font-size: 18px;
     font-weight: bold;
     color: black;
+
+    @media(max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .clickable_avatar {

@@ -1,0 +1,148 @@
+.footer-wrapper {
+  background-color: #ebebeb;
+  padding: 1rem 0;
+}
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    padding: 10px 0;
+  }
+}
+
+.container.footer {
+  width: 80%;
+}
+@media (max-width: 480px) {
+  .container.footer {
+    width: 90%;
+  }
+}
+
+.footer-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .footer-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.half-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (max-width: 480px) {
+  .half-column {
+    margin: 0 auto;
+  }
+  .half-column:last-child {
+    margin-top: 8px;
+  }
+}
+
+.half-column.address {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.half-column.socials {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+@media (max-width: 1024px) {
+  .half-column.socials {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+}
+
+.footer-contacts {
+  font-size: 18px;
+  font-style: normal;
+}
+@media (max-width: 540px) {
+  .footer-contacts {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.footer-contacts p {
+  margin-bottom: 5px;
+}
+@media (max-width: 480px) {
+  .footer-contacts p {
+    margin-bottom: 6px;
+  }
+}
+
+.footer-contacts img {
+  width: 14px;
+  margin-right: 4px;
+}
+
+.footer-contacts a {
+  text-decoration: none;
+  color: initial;
+}
+
+.socials-row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto 0;
+}
+@media (max-width: 480px) {
+  .socials-row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.social-item {
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+@media (max-width: 480px) {
+  .social-item {
+    margin: 0 10px;
+  }
+}
+
+.social-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.social-item img {
+  opacity: 0.45;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: auto;
+}
+@media (max-width: 540px) {
+  .social-item img {
+    width: 30px;
+  }
+}
+
+.social-item:hover img {
+  opacity: 1;
+}

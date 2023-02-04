@@ -8,9 +8,22 @@
   padding-top: 1.5rem;
 }
 
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header_logo {
   height: 40px;
   width: 40px;
+  margin: auto;
+}
+@media (max-width: 1250px) {
+  .header_logo {
+    height: 37px;
+    width: 37px;
+  }
 }
 
 .header_navigationLinks {
@@ -19,10 +32,14 @@
   display: flex;
   line-height: 45px;
 }
-
 .header_navigationLinks a {
   padding: 0 1.3rem;
   text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .header_navigationLinks {
+    display: none;
+  }
 }
 
 .aboutUs_link-linkText {
@@ -39,9 +56,15 @@
   display: flex;
   line-height: 45px;
 }
+@media (max-width: 1024px) {
+  .header_phone {
+    display: none;
+  }
+}
 
 .header_phone-icon {
   padding-right: 6px;
+  margin-top: 2px;
 }
 
 .header_phone-icon img {
@@ -53,15 +76,30 @@
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-  font-family: "Play";
   color: #292929;
-}
-
-.header_phone-number a {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 .header_phone-number a:hover {
   color: #ca1b36;
+}
+@media (max-width: 1250px) {
+  .header_phone-number a {
+    font-size: 16px;
+  }
+}
+
+.header_hamgurgerMenu {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .header_hamgurgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 1250px) {
+  .nav_link span {
+    font-size: 14px;
+  }
 }

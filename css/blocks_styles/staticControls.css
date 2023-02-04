@@ -1,0 +1,73 @@
+.navigation-dots {
+  position: absolute;
+  top: 25%;
+  color: #000;
+  right: 5%;
+  z-index: 1000;
+}
+.navigation-dots.navigation-dots--shadowed {
+  color: #000;
+}
+.navigation-dots.navigation-dots--clarified {
+  color: #fff;
+}
+
+.nav_dot-item {
+  list-style: none;
+  padding: 0px 6px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+.nav_dot-item:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.nav_dot-item--active {
+  border-color: #000;
+}
+
+.navigation-dots.navigation-dots--clarified .nav_dot-item--active {
+  border-color: #fff;
+}
+
+.uphead-navigation-controller {
+  position: absolute;
+  bottom: 10%;
+  right: 4.65%;
+  z-index: 1000;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+.uphead-navigation-controller.hidden-uphead-controller {
+  display: none;
+}
+.uphead-navigation-controller.visible-uphead-controller {
+  display: block;
+}
+
+.head-controller a {
+  color: #000;
+}
+
+.uphead-btn {
+  width: 32px;
+  border: 2px solid;
+  border-radius: 50%;
+  background: black;
+  padding: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.uphead-btn path {
+  fill: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.uphead-btn:hover {
+  background: #fff;
+}
+.uphead-btn:hover path {
+  fill: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

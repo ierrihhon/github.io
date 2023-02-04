@@ -1,7 +1,17 @@
-.yandexMap {
-    height: 40rem;
+.map_container {
+    height: 90%;
+    width: 1200px;
+    margin: 0 auto;
+
+    @media(max-width: 480px) {
+        height: 85%;
+    }
 }
 
 div#map {
     height: 100%;
+}
+
+footer {
+    height: 90%;
 }
