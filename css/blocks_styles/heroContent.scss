@@ -477,9 +477,11 @@ li.site-chapter a {
 
 .close-burger-button img {
     width: 24px;
+    height: 24px;
     opacity: .7;
 
     @media(max-width: 480px) {
         width: 18px;
+        height: 18px;
     }
 }
