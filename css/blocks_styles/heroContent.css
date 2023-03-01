@@ -548,10 +548,12 @@ li.site-chapter a {
 
 .close-burger-button img {
   width: 24px;
+  height: 24px;
   opacity: 0.7;
 }
 @media (max-width: 480px) {
   .close-burger-button img {
     width: 18px;
+    height: 18px;
   }
 }
