@@ -184,8 +184,8 @@
 
 .clickable_avatar {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   border: 6px solid transparent;
   overflow: hidden;
