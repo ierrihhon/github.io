@@ -344,6 +344,18 @@ if (isMobile) {
     });
 
     $("body").swipe( {
+        swipeUp: function (
+            event, 
+            direction
+        ) {
+            const scroller = ViewportScroller();
+            let scrollDirection = "";
+    
+            if (direction = "up") scrollDirection = "next";
+    
+          scroller[scrollDirection]();
+        },
+
         swipeDown: function (
             event, 
             direction
@@ -354,6 +366,6 @@ if (isMobile) {
             if (direction = "down") scrollDirection = "prev";
     
           scroller[scrollDirection]();
-        },
+        }
     });
 }
